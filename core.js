@@ -8,8 +8,8 @@ define(['N/log'],
     
     const generateRecord = (scriptContext) => { 
         //todo matching old and new records
-        var newCustomRecord = scriptContext.newRecord.fields; 
-        var oldCustomRecord = scriptContext.oldRecord.fields; 
+        var newCustomRecord = scriptContext.newRecord; 
+        var oldCustomRecord = scriptContext.oldRecord; 
 
         log.debug({
             title: 'newRecord JSON', 
